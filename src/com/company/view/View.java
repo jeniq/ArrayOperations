@@ -15,6 +15,9 @@ public class View {
     public final static String ARRAY_MAX_VALUE_POS = "The max value position is ";
     public final static String ARRAY_MIN_VALUE = "The min value is ";
     public final static String ARRAY_MIN_VALUE_POS = "The min value position is ";
+    public final static String ARRAY_AVERAGE_VALUE = "The average value is ";
+    public final static String ASK_ELEMENT = "Enter number to count in array: ";
+    public final static String ARRAY_COUNT_SAME_ELEMENTS = "Same elements in array: ";
 
     public void printMessage(String message){
         System.out.println(message);

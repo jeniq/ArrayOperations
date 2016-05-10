@@ -56,6 +56,34 @@ public class Model {
         return min;
     }
 
+    /**
+     * This method calculate average value of array
+     *
+     * @return integer value
+     */
+    public int averageValue() {
+        int sum = 0;
+        for (int curr : array) {
+            sum += curr;
+        }
+        return sum / array.length;
+    }
+
+    /**
+     * This method count every entry of input element
+     * @param search input integer value
+     * @return integer number
+     */
+    public int findQuantityOfSameElements(int search){
+        int n = 0;
+        for (int current : array){
+            if (current == search){
+                n++;
+            }
+        }
+        return n;
+    }
+
     public void newArray(){
         array = new int[size];
     }
