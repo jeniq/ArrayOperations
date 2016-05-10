@@ -114,6 +114,25 @@ public class Model {
         return n;
     }
 
+    /**
+     * This method multiply every element by the input number
+     * @param n input integer number
+     */
+    public void multiplyEveryElement(int n){
+        for (int i = 0; i < array.length; i++){
+            array[i] *= n;
+        }
+    }
+
+    /**
+     * This method summarize element's index with element value
+     */
+    public void sumIndexWithElement(){
+        for (int i = 0; i < array.length; i++){
+            array[i] += i;
+        }
+    }
+
     public void newArray(){
         array = new int[size];
     }

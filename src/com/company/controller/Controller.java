@@ -40,6 +40,10 @@ public class Controller {
                 + model.findQuantityOfSameElements(checkInputIntegerValue(sc)));
         view.printMessage(View.ARRAY_ZERO_ELEMENTS + model.findElementsEqualZero());
         view.printMessage(View.ARRAY_POSITIVE_ELEMENTS + model.findPositiveElements());
+        view.printMessage(View.ASK_MULTIPLIER);
+        model.multiplyEveryElement(checkInputIntegerValue(sc));
+        model.sumIndexWithElement();
+        view.printMessage(model.getArray());
     }
 
     /**
