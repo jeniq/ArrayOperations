@@ -84,6 +84,36 @@ public class Model {
         return n;
     }
 
+    /**
+     * This method count elements that equal 0
+     *
+     * @return integer value
+     */
+    public int findElementsEqualZero(){
+        int zero = 0;
+        for (int current : array){
+            if (current == 0){
+                zero++;
+            }
+        }
+        return zero;
+    }
+
+    /**
+     * This element count positive elements
+     *
+     * @return integer value
+     */
+    public int findPositiveElements(){
+        int n = 0;
+        for (int current : array){
+            if (current > 0){
+                n++;
+            }
+        }
+        return n;
+    }
+
     public void newArray(){
         array = new int[size];
     }

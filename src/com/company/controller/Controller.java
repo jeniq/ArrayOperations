@@ -35,9 +35,11 @@ public class Controller {
         view.printMessage(View.ARRAY_MIN_VALUE + model.minArrayElement());
         view.printMessage(View.ARRAY_MIN_VALUE_POS + (model.getMinValuePos() + 1));
         view.printMessage(View.ARRAY_AVERAGE_VALUE + model.averageValue());
-        view.printMessage(View.ARRAY_COUNT_SAME_ELEMENTS);
+        view.printMessage(View.ASK_ELEMENT);
         view.printMessage(View.ARRAY_COUNT_SAME_ELEMENTS
                 + model.findQuantityOfSameElements(checkInputIntegerValue(sc)));
+        view.printMessage(View.ARRAY_ZERO_ELEMENTS + model.findElementsEqualZero());
+        view.printMessage(View.ARRAY_POSITIVE_ELEMENTS + model.findPositiveElements());
     }
 
     /**
