@@ -22,6 +22,9 @@ public class View {
     public final static String ARRAY_POSITIVE_ELEMENTS = "Positive elements: ";
     public final static String ASK_MULTIPLIER = "Enter multiplier: ";
     public final static String FIRST_POSITIVE_ELEMENT = "First positive element: ";
+    public final static String LAST_NEGATIVE_ELEMENT = "Last negative element: ";
+    public final static String ELEMENT_INDEX = "Indexes of element: ";
+
 
     public void printMessage(String message){
         System.out.println(message);

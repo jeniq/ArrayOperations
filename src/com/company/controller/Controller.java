@@ -31,9 +31,9 @@ public class Controller {
         view.printMessage(model.getArray());
         view.printMessage(View.ARRAY_SUM + model.arraySum());
         view.printMessage(View.ARRAY_MAX_VALUE + model.maxArrayElement());
-        view.printMessage(View.ARRAY_MAX_VALUE_POS + (model.getMaxValuePos() + 1));
+        view.printMessage(View.ARRAY_MAX_VALUE_POS + model.getMaxValuePos());
         view.printMessage(View.ARRAY_MIN_VALUE + model.minArrayElement());
-        view.printMessage(View.ARRAY_MIN_VALUE_POS + (model.getMinValuePos() + 1));
+        view.printMessage(View.ARRAY_MIN_VALUE_POS + model.getMinValuePos());
         view.printMessage(View.ARRAY_AVERAGE_VALUE + model.averageValue());
         view.printMessage(View.ASK_ELEMENT);
    //     view.printMessage(View.ARRAY_COUNT_SAME_ELEMENTS
@@ -44,11 +44,14 @@ public class Controller {
     //    model.multiplyEveryElement(checkInputIntegerValue(sc));
         model.sumIndexWithElement();
         view.printMessage(model.getArray());
-        model.resetEvenValueElement();
+     //   model.resetEvenValueElement();
         view.printMessage(model.getArray());
-        model.resetElemWithOddIndex();
+      //  model.resetElemWithOddIndex();
         view.printMessage(model.getArray());
         view.printMessage(View.FIRST_POSITIVE_ELEMENT + model.findFirstPositiveElement());
+        view.printMessage(View.LAST_NEGATIVE_ELEMENT + model.findLastNegativeElement());
+        view.printMessage(View.ASK_INTEGER_VALUE);
+        view.printMessage(View.ELEMENT_INDEX + model.findIndexesOfElement(checkInputIntegerValue(sc)));
     }
 
     /**
