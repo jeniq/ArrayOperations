@@ -133,6 +133,38 @@ public class Model {
         }
     }
 
+    /**
+     */
+    public void resetEvenValueElement(){
+        for (int i = 0; i < array.length; i++){
+            if ((array[i] % 2)  == 0){
+                array[i] = 0;
+            }
+        }
+    }
+
+    /**
+     */
+    public void resetElemWithOddIndex(){
+        for (int i = 0; i < array.length; i+=2){
+            array[i] = 0;
+        }
+    }
+
+    /**
+     * @return integer value
+     */
+    public int findFirstPositiveElement(){
+        int positive = 0;
+        for (int current : array){
+            if (current > 0){
+                positive = current;
+                break;
+            }
+        }
+        return positive;
+    }
+
     public void newArray(){
         array = new int[size];
     }
